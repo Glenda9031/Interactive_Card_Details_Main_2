@@ -1,2 +1,158 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
 
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --active-input-borders: linear-gradient(hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+    --input-errors: hsl(0, 100%, 66%);
+    --neutral-200: hsl(270, 3%, 87%);
+    --neutral-500: hsl(279, 6%, 55%);
+    --neutral-800: hsl(278, 68%, 11%);
+ }
+ 
+body {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.section-one {
+    background-image: url(../images/bg-main-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+ }
+ 
+ .cards {
+    padding: 2.5rem 1.25rem 3.75rem 1.25rem;
+    text-align: right;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+ }
+ 
+ .card-back {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+ }
+ 
+ .card-back img, .card-front img{
+    width: 100%;
+ }
+ 
+ .card-back-code {
+    font-size: 0.8rem;
+    position: absolute;
+    top: 5.4375rem;
+    right: 3.75rem;
+ }
+ 
+.card-front {
+    position: absolute;
+    padding-right: 20px;
+    bottom: -3.75rem;
+    left: 1.875rem;
+ }
+ 
+ .card-logo, .card-front-code, .card-name, .expiration-date {
+    position: absolute;
+ }
+ 
+ .card-logo, .card-front-code, .card-name {
+    left: 1.5625rem;
+ }
+ 
+ .card-logo {
+    top: 1.25rem;
+    height: 2.9375rem;
+    max-width: 5.25rem;
+ }
+ 
+ .card-front-code {
+    bottom: 4.0625rem;
+ 
+    font-size: 1.25rem;
+    letter-spacing: .25rem;
+ }
+ 
+ .card-name, .expiration-date {
+    bottom: 1.5625rem;
+ 
+    text-transform: uppercase;
+    font-size: 0.65rem;
+    letter-spacing: .1875rem;
+ }
+ 
+ .expiration-date {
+    right: 8.25rem;
+ }
+ 
+
+@media (max-width: 28.75rem) {
+    .card-back-code {
+        font-size: 0.6rem;
+        top: 4.7188rem;
+    }
+
+    .card-front-code {
+        font-size: 1rem;
+    }
+
+    .card-name, .expiration-date {
+        font-size: 0.5rem;
+    }
+}
+
+@media (min-width: 43.75rem) {
+    .card-back {
+        left: -15%;
+    }
+
+    .card-front {
+        left: 20%;
+    }
+}
+
+@media (min-width: 62.5rem) {
+    .card-back {
+        left: -20%;
+    }
+
+    .card-front {
+        left: 25%;
+    }
+}
+
+.section-two {
+    margin: 6.25rem 1.5625rem 3.125rem 1.5625rem;
+    display: flex;
+    justify-content: center;
+}
+
+.input-border {
+    background: var(--active-input-borders);
+    padding: .0625rem;
+    border-radius: .3125rem;
+    max-width: 28.125rem;
+}
+
+.input-border-display {
+    visibility: hidden;
+}
+
+.container-input-date {
+    display: flex;
+    width: 100%;
+}
+
+
+
+
+
+
