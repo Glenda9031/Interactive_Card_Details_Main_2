@@ -151,8 +151,172 @@ body {
     width: 100%;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 28.125rem;
+}
 
+form-display {
+    display: ;
+}
 
+label {
+    display: block;
+    text-transform: uppercase;
+    margin-top: 1.25rem;
+    margin-bottom: .3125rem;
+    font-size: 0.75rem;
+    letter-spacing: .125rem;
+    color: var(--neutral-800);
+}
 
+input {
+    visibility: visible;
+    width: 100%;
+    padding: .625rem .9375rem;
+    color: var(--neutral-500);
+    border-radius: .3125rem;
+    border: .0625rem solid var(--neutral-200);
+    outline: none;
+}
+
+.input-error {
+    color: var(--input-errors);
+    font-size: 0.9rem;
+    margin-top: .5rem;
+}
+
+input[type=number] {
+    appearance: textfield;
+}
+.form-last-row {
+    display: flex;
+    margin-bottom: 1.5625rem;
+}
+
+.form-date,
+.form-cvc {
+    width: 50%;
+}
+
+.form-cvc input {
+    width: 100%;
+}
+
+button {
+    background-color: var(--neutral-800);
+    color: #fff;
+    padding: .9375rem;
+    border-radius: .625rem;
+    border: transparent;
+    cursor: pointer;
+}
+
+.thank-you {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25rem;
+}
+
+.thank-you-display {
+    display: none;
+}
+
+.icon-complete {
+    margin-bottom: 2.5rem;
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: .375rem;
+    margin-bottom: .9375rem
+}
+
+.description {
+    color: var(--neutral-500);
+    margin-bottom: 2.5rem;
+}
+
+.btn-continue {
+    width: 23.4375rem;
+}
+
+@media (min-width: 75rem) {
+    main {
+        display: flex;
+    }
+
+    .section-one {
+        height: 100vh;
+        background-image: url(../images/bg-main-desktop.png);
+        display: flex;
+        width: 35%;
+    }
+
+    .cards {
+        position: static;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .card-back {
+        display: block;
+        position: absolute;
+        top: 52%;
+        left: 22%;
+        box-shadow: none;
+    }
+
+    .card-back-code {
+        top: 5rem;
+        right: 8.625rem;
+    }
+
+    .card-front {
+        top: -12%;
+        left: 45%;
+        position: relative;
+        padding: 0;
+    }
+
+    .expiration-date {
+        right: 7.1875rem;
+    }
+
+    .card-back,
+    .card-front {
+        width: 28.125rem;
+    }
+
+    .section-two {
+        width: 65%;
+        margin: 0;
+        padding-left: 6.25rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form {
+        max-width: 23.4375rem;
+    }
+}
+
+@media (min-width: 100rem) {
+    .card-back {
+        left: 30%;
+    }
+
+    .card-front {
+        left: 85%;
+    }
+}
+
+.display-none {
+    display: none;
+}
 
 
